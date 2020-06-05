@@ -27,7 +27,7 @@ if ( ! function_exists( 'ims_matter_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'ims-matter' ),
+			esc_html_x( '%s', 'post date', 'ims-matter' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -58,21 +58,21 @@ if ( ! function_exists( 'ims_matter_entry_footer' ) ) :
 	 */
 	function ims_matter_entry_footer() {
 		// Hide category and tag text for pages.
-		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'ims-matter' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'ims-matter' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			}
+		// if ( 'post' === get_post_type() ) {
+		// 	/* translators: used between list items, there is a space after the comma */
+		// 	$categories_list = get_the_category_list( esc_html__( ', ', 'ims-matter' ) );
+		// 	if ( $categories_list ) {
+		// 		/* translators: 1: list of categories. */
+		// 		printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'ims-matter' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		// 	}
 
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'ims-matter' ) );
-			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'ims-matter' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			}
-		}
+		// 	/* translators: used between list items, there is a space after the comma */
+		// 	$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'ims-matter' ) );
+		// 	if ( $tags_list ) {
+		// 		/* translators: 1: list of tags. */
+		// 		printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'ims-matter' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		// 	}
+		// }
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';

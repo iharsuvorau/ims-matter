@@ -29,8 +29,7 @@
 
         <header class="site-hero-header">
             <div id="masthead" class="site-header">
-                <nav id="site-navigation" class="main-navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'ims-matter'); ?></button>
+                <nav class="main-navigation">
                     <?php
                     wp_nav_menu(
                         array(
@@ -42,6 +41,30 @@
                 </nav>
             </div>
 
+            <div class="hero-message">
+                <p>We focuse on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
+                <p><a href="<?php _e(get_post_permalink(2)) ?>" class="primary-link-uppercase">Explore more</a></p>
+            </div>
+        </header>
+
+        <header class="mobile-only">
+            <div id="masthead" class="site-header">
+                <div class="site-branding">
+                    <?php the_custom_logo(); ?>
+                </div><!-- .site-branding -->
+
+                <nav id="site-navigation" class="main-navigation">
+                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Menu', 'ims-matter'); ?></button>
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                        )
+                    );
+                    ?>
+                </nav>
+            </div>
             <div class="hero-message">
                 <p>We focuse on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
                 <p><a href="<?php _e(get_post_permalink(2)) ?>" class="primary-link-uppercase">Explore more</a></p>

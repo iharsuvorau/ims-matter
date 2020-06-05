@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,19 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ims-matter' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ims-matter' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ims-matter' ), 'ims-matter', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer secondary-text-uppercase">
+	<div class="footer-date">
+		&copy; <?php echo date_i18n(_x('Y', 'copyright date format', 'matter')); ?>
+	</div>
+	<div class="footer-credits">
+		<span class="pr1 mv1"><a href="">Institute of Technology</a>,&nbsp;<a href="">University of Tartu</a>. Funded by the European Union</span>
+		<img class="eu-flag" src="/wp-content/uploads/2020/05/flag_yellow_low.jpg" />
+	</div>
+</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

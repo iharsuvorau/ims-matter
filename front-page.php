@@ -17,17 +17,17 @@ get_template_part('template-parts/hero-header');
 ?>
 
 <main id="primary" class="site-main">
-    <div class="hero-section-nav">
-        <a href="<?php _e(get_post_permalink(24)) ?>" class="hero-section-nav-item">
-            <div class="secondary-title wght-700">Advisory Board</div>
+    <div class="hero-navigation">
+        <a href="<?php _e(get_post_permalink(24)) ?>" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">Advisory Board</div>
             <p class="secondary-text-uppercase">Oversight of the project implementation</p>
         </a>
-        <a href="<?php _e(get_post_permalink(30)) ?>" class="hero-section-nav-item">
-            <div class="secondary-title wght-700">Publications</div>
+        <a href="<?php _e(get_post_permalink(30)) ?>" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">Publications</div>
             <p class="secondary-text-uppercase">Open publications on the Matter</p>
         </a>
-        <a href="<?php _e(get_post_permalink(27)) ?>" class="hero-section-nav-item">
-            <div class="secondary-title wght-700">Team</div>
+        <a href="<?php _e(get_post_permalink(27)) ?>" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">Team</div>
             <p class="secondary-text-uppercase">Project's administration and researchers</p>
         </a>
     </div>
@@ -38,3 +38,4 @@ get_template_part('template-parts/hero-header');
 <?php
 // get_sidebar();
 get_footer();
+?>

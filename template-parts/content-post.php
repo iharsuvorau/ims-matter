@@ -25,9 +25,9 @@
 				ims_matter_posted_on();
 				// ims_matter_posted_by();
 				?>
-			</div><!-- .entry-meta -->
+			</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<?php ims_matter_post_thumbnail(); ?>
 
@@ -55,9 +55,9 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php ims_matter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</footer>
+</article><

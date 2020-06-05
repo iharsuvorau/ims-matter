@@ -9,7 +9,7 @@
  */
 ?>
 
-<div class="recent-posts-list">
+<div class="recent-posts">
     <h3 class="secondary-title letter-spacing-small wght-700 padding-std mb-2 mt-4">Recent news</h3>
     <?php
     $args = array(
