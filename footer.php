@@ -18,7 +18,7 @@
 	</div>
 	<div class="footer-credits">
 		<span class="pr1 mv1"><a href="">Institute of Technology</a>,&nbsp;<a href="">University of Tartu</a>. Funded by the European Union</span>
-		<img class="eu-flag" src="/wp-content/uploads/2020/05/flag_yellow_low.jpg" />
+		<img class="eu-flag" src="<?php echo get_template_directory_uri(); ?>/assets/images/flag_yellow_low.jpg" />
 	</div>
 </footer>
 </div><!-- #page -->
