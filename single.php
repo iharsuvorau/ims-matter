@@ -11,7 +11,6 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -20,8 +19,8 @@ get_header();
 
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'ims-matter' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'ims-matter' ) . '</span> <span class="nav-title">%title</span>',
+					'prev_text' => '<span class="nav-subtitle secondary-text-uppercase">' . esc_html__( 'Previous:', 'ims-matter' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle secondary-text-uppercase">' . esc_html__( 'Next:', 'ims-matter' ) . '</span> <span class="nav-title">%title</span>',
 				)
 			);
 

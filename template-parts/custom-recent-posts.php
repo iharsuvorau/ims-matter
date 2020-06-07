@@ -26,8 +26,8 @@
     while (have_posts()) {
         the_post(); ?>
         <div class="recent-posts-item">
-            <div class="recent-post-date secondary-text-uppercase"><?php the_date() ?></div>
-            <div class="post-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></div>
+            <div class="recent-post-date secondary-text-uppercase"><?php the_date(); ?></div>
+            <div class="post-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>
         </div>
     <?php } ?>
     <div class="recent-posts-item">

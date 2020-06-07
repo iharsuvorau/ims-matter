@@ -60,4 +60,4 @@
 	<footer class="entry-footer">
 		<?php ims_matter_entry_footer(); ?>
 	</footer>
-</article><
+</article>
