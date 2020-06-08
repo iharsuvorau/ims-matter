@@ -43,7 +43,7 @@
 
             <div class="hero-message">
                 <p>We focus on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
-                <p><a href="<?php _e(get_post_permalink(2)) ?>" class="primary-link-uppercase">Explore more</a></p>
+                <p><a href="/about/" class="primary-link-uppercase">Explore more</a></p>
             </div>
         </header>
 

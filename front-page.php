@@ -18,17 +18,17 @@ get_template_part('template-parts/hero-header');
 
 <main id="primary" class="site-main">
     <div class="hero-navigation">
-        <a href="<?php _e(get_post_permalink(24)) ?>" class="hero-navigation-item">
-            <div class="secondary-title wght-700 pb1">Advisory Board</div>
-            <p class="secondary-text-uppercase">Oversight of the project implementation</p>
-        </a>
-        <a href="<?php _e(get_post_permalink(30)) ?>" class="hero-navigation-item">
+        <a href="/publications/" class="hero-navigation-item">
             <div class="secondary-title wght-700 pb1">Publications</div>
-            <p class="secondary-text-uppercase">Open publications on the Matter</p>
+            <p class="secondary-text-uppercase">Open publications from Matter</p>
         </a>
-        <a href="<?php _e(get_post_permalink(27)) ?>" class="hero-navigation-item">
+        <a href="/team/" class="hero-navigation-item">
             <div class="secondary-title wght-700 pb1">Team</div>
-            <p class="secondary-text-uppercase">Project's administration and researchers</p>
+            <p class="secondary-text-uppercase">Project's administration and research staff</p>
+        </a>
+        <a href="/contacts/" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">Contacts</div>
+            <p class="secondary-text-uppercase">Contact information and directions</p>
         </a>
     </div>
 
