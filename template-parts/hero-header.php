@@ -11,17 +11,7 @@
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="shortcut icon" href="<?php echo(get_template_directory_uri() . '/assets/images/favicon_16@2x.png');?>" type="image/png">
-
-    <?php wp_head(); ?>
-</head>
+<?php get_template_part('template-parts/matter-head'); ?>
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
@@ -41,7 +31,6 @@
                     ?>
                 </nav>
             </div>
-
             <div class="hero-message">
                 <p>We focus on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
                 <p><a href="/about/" class="primary-link-uppercase">Explore more</a></p>
@@ -52,8 +41,7 @@
             <div id="masthead" class="site-header">
                 <div class="site-branding">
                     <?php the_custom_logo(); ?>
-                </div><!-- .site-branding -->
-
+                </div>
                 <nav id="site-navigation" class="main-navigation">
                     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Menu', 'ims-matter'); ?></button>
                     <?php
@@ -67,7 +55,7 @@
                 </nav>
             </div>
             <div class="hero-message">
-                <p>We focuse on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
-                <p><a href="<?php _e(get_post_permalink(2)) ?>" class="primary-link-uppercase">Explore more</a></p>
+                <p>We focus on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial for interdisciplinary and widespread use</p>
+                <p><a href="/about/" class="primary-link-uppercase">Explore more</a></p>
             </div>
         </header>
