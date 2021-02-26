@@ -22,8 +22,8 @@ get_template_part('template-parts/hero-header');
             <div class="secondary-title wght-700 pb1">Publications</div>
             <p class="secondary-text-uppercase">Open publications from Matter</p>
         </a>
-        <a href="/team/" class="hero-navigation-item">
-            <div class="secondary-title wght-700 pb1">Team</div>
+        <a href="/people/" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">People</div>
             <p class="secondary-text-uppercase">Project's administration and research staff</p>
         </a>
         <a href="/contacts/" class="hero-navigation-item">
