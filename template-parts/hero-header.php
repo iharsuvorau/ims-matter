@@ -12,6 +12,7 @@
 
 ?>
 <?php get_template_part( 'template-parts/matter-head' ); ?>
+<?php $tagline = get_bloginfo('description'); ?>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
@@ -32,8 +33,7 @@
             </nav>
         </div>
         <div class="hero-message">
-            <p>We focus on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial
-                for interdisciplinary and widespread use</p>
+            <p><?php echo $tagline; ?></p>
             <p><a href="/about/" class="primary-link-uppercase">Explore more</a></p>
         </div>
     </header>
@@ -57,8 +57,7 @@
             </nav>
         </div>
         <div class="hero-message">
-            <p>We focus on nanoscale material behaviour in complex environments and upscaling of control of nanomaterial
-                for interdisciplinary and widespread use</p>
+            <p><?php echo $tagline; ?></p>
             <p><a href="/about/" class="primary-link-uppercase">Explore more</a></p>
         </div>
     </header>
