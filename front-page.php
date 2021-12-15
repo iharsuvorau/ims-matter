@@ -18,17 +18,17 @@ get_template_part('template-parts/hero-header');
 
 <main id="primary" class="site-main">
     <div class="hero-navigation">
-        <a href="/publications/" class="hero-navigation-item">
-            <div class="secondary-title wght-700 pb1">Publications</div>
-            <p class="secondary-text-uppercase">Open publications from Matter</p>
+        <a href="/about/" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">What is MATTER</div>
+            <p class="secondary-text-uppercase">About</p>
         </a>
-        <a href="/people/" class="hero-navigation-item">
-            <div class="secondary-title wght-700 pb1">People</div>
-            <p class="secondary-text-uppercase">Project's administration and research staff</p>
+        <a href="/team-members-and-collaborations/" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">Who is MATTER</div>
+            <p class="secondary-text-uppercase">Team members and collaboration</p>
         </a>
-        <a href="/contacts/" class="hero-navigation-item">
-            <div class="secondary-title wght-700 pb1">Contacts</div>
-            <p class="secondary-text-uppercase">Contact information and directions</p>
+        <a href="/available-thesis-topics/" class="hero-navigation-item">
+            <div class="secondary-title wght-700 pb1">For students</div>
+            <p class="secondary-text-uppercase">Available theses topics</p>
         </a>
     </div>
 
